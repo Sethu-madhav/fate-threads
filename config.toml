@@ -1,7 +1,9 @@
 base_url = "https://fate-threads.onrender.com/"
 title = "fate.threads"
-build_search_index = true
+description = "This is an example description"
+build_search_index = false
 generate_feeds = true
+compile_sass = true
 minify_html = true
 
 theme = "apollo"
@@ -12,8 +14,13 @@ highlight_code = true
 highlight_theme = "ayu-light"
 
 [extra]
+toc = true
 use_cdn = false
 theme = "toggle"
+fancy_code = true
+dynamic_note = true           # a note that can be toggled
+mathjax = true
+mathjax_dollar_inline_enable = true
 
 menu = [
     { name = "/posts", url = "/posts", weight = 1 },
